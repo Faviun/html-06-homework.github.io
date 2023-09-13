@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <form name="data" action="#" method="get">
+        <label for="">First name</label>
+        <input type="text" required placeholder="Введи имя" value="Alesha"/>
+        <br />
+        <label for="">
+            Last name
+            <input type="text" />
+        </label>
+        <br />
+        <input type="button" value="Press F" />
+        <br />
+        <button>To pay respect</button>
+        <br />
+        <label for="">products:</label>
+        <input type="checkbox">
+        <label for="">fruts</label>
+        <input type="checkbox">
+        <br />
+        <label for="">radio 1</label>
+        <input type="radio" name="radik" value="1">
+        <br>
+        <label for="">radio 2</label>
+        <input type="radio" name="radik" value="2">
+        <br>
+        <label for="">radio 3</label>
+        <input type="radio" name="radik" value="3">
+        <br>
+        <input type="color">
+        <br>
+        <input type="password">
+        <br>
+        <input type="email">
+        <input type="submit">
+        <br>
+        <input type="range" min="10" max="100">
+        <br>
+        <input type="file" accept="image/*">
+    </form> -->
+    <form action="#" method="post" name="personData">
+        <fieldset>
+            <legend>
+                Personal Data
+            </legend>
+        <div class="lab">
+            <label for="firstName">First name</label>
+            <input id="firstName" type="text" placeholder="John" name="fName">
+        </div>
+       <div class="lab">
+            <label for="lastName">Last name</label>
+            <input id="lastName" type="text" placeholder="Cmith" name="lName">
+       </div>
+        <div class="lab">
+             <label for="email1">E-mail</label>
+            <input id="email1" type="email" name="login" placeholder="example@rambler.ru" autocomplete="off" required>
+        </div>
+        <div class="lab">
+            <label for="pas1">Password</label>
+            <input id="pas1" type="password" placeholder="Enter your Password">
+        </div>
+        <div class="lab">
+            
+            <p>Gender:  </p>
+            <!-- <div class="gender">
+                <input type="radio" name="gender" value="1">
+            <label for="">Male </label>
+            <input type="radio" name="gender" value="2">
+            <label for="">Female </label>
+            <input type="radio" name="gender" value="3">
+            <label for="">Other </label>
+            </div> -->
+            <div class="gender">
+            <label class="label_box">
+                <input type="radio" name="gender" value="1" class="radio_box">
+                <span class="radio_style"></span>
+                <p class="radio_value">Male</p>
+            </label>
+            <label class="label_box">
+                <input type="radio" name="gender" value="2" class="radio_box">
+                <span class="radio_style"></span>
+                <p class="radio_value">Female</p>
+            </label>
+            <label class="label_box">
+                <input type="radio" name="gender" value="3" class="radio_box">
+                <span class="radio_style"></span>
+                <p class="radio_value">Other</p>
+            </label>
+        </div>
+
+        </div>
+        <div class="lab">
+            <p>Hobby:  </p>
+            <div class="hobby">
+                <label class="label_box">
+                    <input type="checkbox" id="Games" class="check_box">
+                    <span class="check_style"></span>
+                    <p class="check_value">Games</p>
+                </label>
+                <label class="label_box">
+                    <input type="checkbox" id="Games" class="check_box">
+                    <span class="check_style"></span>
+                    <p class="check_value">Books</p>
+                </label>
+                <label class="label_box">
+                    <input type="checkbox" id="Games" class="check_box">
+                    <span class="check_style"></span>
+                    <p class="check_value">Html</p>
+                </label>
+            </div>
+        </div>
+        <div class="lab">
+            <label for="birthDate">Birth date</label>
+            <input type="date" name="birthDate">
+        </div>
+        <div class="lab">
+            <label for="code">Code: </label>
+            <select name="code">
+                <option value="373">Moldova</option>
+                <option value="778">PMR</option>
+                <option value="1">China</option>
+                <option value="2">Cuba</option>
+                <option value="3">Vatican</option>
+            </select>
+        </div>
+        <div class="lab">
+            <label class="com_txt" for="comment">Comment: </label>
+            <textarea class="com" name="comment"></textarea>
+        </div>
+    </fieldset>
+    <div class="buttons">
+        <input class="bot_but_1" type="submit" value="Send">
+        <input class="bot_but_2" type="reset" value="Clear">
+    </div>
+    </form>
+
+
+<!-- застилить форму -->
+<!-- чекбокс 35х35 изменить на крестик и на зеленный цвет -->
+
+</body>
+</html>
